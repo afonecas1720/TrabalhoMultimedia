@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #2563eb;
+    --cor-primaria-escura: #1d4ed8;
+    --cor-texto: #0f172a;
+    --cor-texto-suave: #475569;
+    --cor-fundo: #f8fafc;
+    --cor-branco: #ffffff;
+    --cor-borda: #e2e8f0;
+    --cor-acento: #f59e0b;
+    --sombra: 0 4px 14px rgba(15, 23, 42, 0.08);
+    --raio: 10px;
+    --max-largura: 1100px;
+    --espaco-secao: clamp(2.5rem, 5vw, 4rem);
+    --fonte: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+    color: var(--cor-primaria-escura);
+}
+
+:focus-visible {
+    outline: 3px solid var(--cor-acento);
+    outline-offset: 2px;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1rem;
+}
