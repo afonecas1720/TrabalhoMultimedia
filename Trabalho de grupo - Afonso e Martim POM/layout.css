@@ -1,0 +1,38 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--cor-borda);
+    backdrop-filter: blur(8px);
+    transition: box-shadow 0.25s ease;
+}
+
+.site-header.is-scrolled {
+    box-shadow: var(--sombra);
+}
+
+.envoltorio {
+    width: min(100% - 2rem, var(--max-largura));
+    margin-inline: auto;
+}
+
+.barra-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 0;
+}
+
+.marca {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.marca span {
+    color: var(--cor-primaria);
+}
