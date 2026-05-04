@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="fundo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="tel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="400" rx="16" fill="url(#fundo)"/>
+  <path d="M180 120 A60 60 0 1 1 179.9 120" fill="none" stroke="#93c5fd" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+  <path d="M180 145 A35 35 0 1 1 179.9 145" fill="none" stroke="#60a5fa" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <path d="M120 220 C100 200 100 170 125 155 L145 175 C135 185 135 200 145 210 L155 220 C165 230 180 230 195 220 L205 210 C215 200 215 185 205 175 L225 155 C250 170 250 200 230 220 L210 255 C190 285 150 285 130 255 Z" fill="url(#tel)" stroke="#1e3a8a" stroke-width="2"/>
+  <path d="M155 195 L175 215 M175 195 L155 215" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.35"/>
+  <rect x="238" y="168" width="56" height="96" rx="8" fill="#1e40af" stroke="#172554" stroke-width="2"/>
+  <rect x="248" y="182" width="36" height="58" rx="2" fill="#dbeafe"/>
+  <circle cx="266" cy="252" r="4" fill="#94a3b8"/>
+  <text x="180" y="360" text-anchor="middle" font-family="Segoe UI,system-ui,sans-serif" font-size="18" font-weight="700" fill="#1e40af">Ligue ou envie email</text>
+</svg>
