@@ -1,0 +1,58 @@
+.hero-servicos {
+            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 55%, #4c1d95 100%);
+            color: var(--cor-branco);
+            padding: var(--espaco-secao) 0;
+            text-align: center;
+        }
+        .hero-servicos h1 {
+            font-size: clamp(1.75rem, 4vw, 2.6rem);
+            margin: 0 0 0.75rem;
+        }
+        .hero-servicos p {
+            opacity: 0.9;
+            max-width: 52ch;
+            margin-inline: auto;
+            margin-bottom: 0;
+        }
+
+        .grelha-servicos-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .cartao-servico-ico {
+            background: var(--cor-branco);
+            border: 1px solid var(--cor-borda);
+            border-radius: var(--raio);
+            padding: 2.25rem 1.75rem 2rem;
+            box-shadow: var(--sombra);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+        }
+        .cartao-servico-ico:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
+            border-color: var(--cor-primaria);
+        }
+        .cartao-servico-ico .ico {
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .cartao-servico-ico h3 {
+            margin: 0;
+            font-size: 1.15rem;
+            color: var(--cor-texto);
+        }
+        .cartao-servico-ico p {
+            margin: 0;
+            font-size: 0.94rem;
+            color: var(--cor-texto-suave);
+            max-width: 30ch;
+            line-height: 1.55;
+        }
