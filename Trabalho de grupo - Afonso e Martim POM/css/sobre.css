@@ -1,0 +1,82 @@
+ .hero-sobre {
+            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 55%, #4c1d95 100%);
+            color: var(--cor-branco);
+            padding: var(--espaco-secao) 0;
+        }
+        .hero-sobre h1 {
+            font-size: clamp(1.75rem, 4vw, 2.6rem);
+            margin: 0 0 1rem;
+        }
+        .hero-sobre p {
+            opacity: 0.92;
+            max-width: 56ch;
+            margin-bottom: 0;
+        }
+        .cartao-tecnico {
+            background: var(--cor-branco);
+            border: 1px solid var(--cor-borda);
+            border-radius: var(--raio);
+            padding: 2rem 1.75rem;
+            box-shadow: var(--sombra);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+        }
+        .cartao-tecnico:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--cor-primaria), #4c1d95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--cor-branco);
+            flex-shrink: 0;
+        }
+        .cartao-tecnico h3 { margin: 0 0 0.25rem; font-size: 1.2rem; }
+        .cartao-tecnico .cargo {
+            color: var(--cor-primaria);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin: 0 0 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .cartao-tecnico p { color: var(--cor-texto-suave); font-size: 0.97rem; margin: 0; }
+        .secao-missao {
+            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%);
+            color: var(--cor-branco);
+            padding: var(--espaco-secao) 0;
+            text-align: center;
+        }
+        .secao-missao h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0 0 1rem; }
+        .secao-missao p { opacity: 0.9; max-width: 60ch; margin-inline: auto; font-size: 1.05rem; }
+        .foto-loja-wrapper {
+            border-radius: var(--raio);
+            overflow: hidden;
+            border: 1px solid var(--cor-borda);
+            box-shadow: var(--sombra);
+        }
+        .foto-loja-wrapper img { width: 100%; height: 340px; object-fit: cover; display: block; }
+        .linha-valores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+        }
+        .item-valor {
+            background: var(--cor-branco);
+            border: 1px solid var(--cor-borda);
+            border-radius: var(--raio);
+            padding: 1.5rem 1.25rem;
+            box-shadow: var(--sombra);
+        }
+        .item-valor .icone-valor { font-size: 2rem; margin-bottom: 0.75rem; }
+        .item-valor h3 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+        .item-valor p { color: var(--cor-texto-suave); font-size: 0.93rem; margin: 0; }
