@@ -1,0 +1,90 @@
+/* componentes.css — secções, cartões, formulário, FAQ, hero */
+
+.titulo-secao {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin: 0 0 0.5rem;
+}
+
+.subtitulo-secao {
+    color: var(--cor-texto-suave);
+    max-width: 52ch;
+    margin: 0 0 1.75rem;
+}
+
+.secao {
+    padding: var(--espaco-secao) 0;
+}
+
+.secao-fundo-claro {
+    background: var(--cor-branco);
+    border-block: 1px solid var(--cor-borda);
+}
+
+.hero-inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: var(--espaco-secao) 0;
+    background: linear-gradient(135deg, #1e3a8a 0%, #312e81 55%, #4c1d95 100%);
+    color: var(--cor-branco);
+}
+
+@media (min-width: 900px) {
+    .hero-inicio {
+        grid-template-columns: 1.1fr 0.9fr;
+        min-height: 42vh;
+    }
+}
+
+.hero-inicio h1 {
+    font-size: clamp(1.75rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+}
+
+.hero-inicio p {
+    opacity: 0.95;
+    margin-bottom: 1.25rem;
+}
+
+.hero-inicio .rotacao-texto {
+    min-height: 4.5rem;
+    font-weight: 600;
+    color: #fde68a;
+    transition: opacity 0.35s ease;
+}
+
+.grelha-tres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.cartao-destaque {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 1.25rem;
+    box-shadow: var(--sombra);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.cartao-destaque:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.cartao-destaque img {
+    width: 100%;
+    max-height: 140px;
+    object-fit: cover;
+    border-radius: calc(var(--raio) - 2px);
+    margin-bottom: 0.75rem;
+}
+
+.grelha-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
