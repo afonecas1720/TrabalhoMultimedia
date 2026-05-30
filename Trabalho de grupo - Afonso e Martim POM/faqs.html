@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ´s</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/faqs.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="envoltorio barra-topo">
+            <input type="checkbox" id="menu-principal" class="menu-toggle" hidden>
+            <a class="marca" href="index.html">RamAires<span>Center</span></a>
+            <label class="rotulo-menu" for="menu-principal" aria-label="Abrir ou fechar menu de navegação">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="principal-nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html">Orçamentos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="faqs.html" aria-current="page">FAQs</a></li>
+                </ul>
+            </nav>
+            <label class="overlay-nav" for="menu-principal" aria-hidden="true"></label>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="hero-faqs" aria-labelledby="titulo-faqs">
+            <div class="envoltorio">
+                <h1 id="titulo-faqs">Perguntas Frequentes</h1>
+                <p>Encontre respostas rápidas às dúvidas mais comuns sobre os nossos serviços</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-label="Perguntas e respostas">
+            <div class="envoltorio">
+                <div class="faqs-layout">
+
+                    <nav class="faqs-nav" aria-label="Categorias de perguntas">
+                        <h2>Categorias</h2>
+                        <ul>
+                            <li><a href="#orcamentos" class="ativo">💰 Orçamentos</a></li>
+                            <li><a href="#reparacoes">🔧 Reparações</a></li>
+                            <li><a href="#prazos">⏱️ Prazos</a></li>
+                            <li><a href="#garantias">🛡️ Garantias</a></li>
+                            <li><a href="#pagamentos">💳 Pagamentos</a></li>
+                        </ul>
+                    </nav>
+
+                    <div>
+
+                        <div class="faq-grupo" id="orcamentos">
+                            <h2 class="faq-grupo-titulo"><span class="ico">💰</span> Orçamentos</h2>
+                            <div class="faq-lista">
+                                <details open>
+                                    <summary>O diagnóstico é mesmo gratuito?</summary>
+                                    <p>Sim, o diagnóstico inicial é sempre gratuito e sem qualquer compromisso. Analisamos o equipamento, identificamos o problema e enviamos-lhe o orçamento. Só avançamos com a reparação após a sua aprovação explícita.</p>
+                                </details>
+                                <details>
+                                    <summary>Como recebo o orçamento?</summary>
+                                    <p>Após o diagnóstico, enviamos o orçamento por SMS ou e-mail, consoante a sua preferência. Também pode ligar-nos e explicamos tudo por telefone.</p>
+                                </details>
+                                <details>
+                                    <summary>O orçamento pode mudar após aprovação?</summary>
+                                    <p>Em regra não. O valor aprovado é o valor final. Em casos excecionais — por exemplo, quando a abertura do equipamento revela danos adicionais não visíveis no diagnóstico inicial — contactamos o cliente antes de prosseguir.</p>
+                                </details>
+                                <details>
+                                    <summary>Posso recusar o orçamento após o diagnóstico?</summary>
+                                    <p>Claro que sim. Se não quiser avançar com a reparação, devolvemos o equipamento no mesmo estado em que foi entregue, sem qualquer custo para si.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="faq-grupo" id="reparacoes">
+                            <h2 class="faq-grupo-titulo"><span class="ico">🔧</span> Reparações</h2>
+                            <div class="faq-lista">
+                                <details>
+                                    <summary>Que tipo de equipamentos reparam?</summary>
+                                    <p>Reparamos computadores portáteis e desktops, telemóveis, tablets, impressoras e consolas de jogos. Para equipamentos muito específicos ou industriais, entre em contacto para verificarmos a viabilidade.</p>
+                                </details>
+                                <details>
+                                    <summary>Usam peças originais nas reparações?</summary>
+                                    <p>Sempre que possível utilizamos peças originais ou de qualidade equivalente certificada. Informamos sempre o cliente sobre a proveniência das peças antes de avançar.</p>
+                                </details>
+                                <details>
+                                    <summary>Os meus dados ficam seguros durante a reparação?</summary>
+                                    <p>Sim. Não acedemos aos seus ficheiros pessoais salvo se for estritamente necessário para o diagnóstico. Recomendamos sempre fazer uma cópia de segurança antes de entregar o equipamento, como precaução.</p>
+                                </details>
+                                <details>
+                                    <summary>Fazem reparações ao domicílio?</summary>
+                                    <p>Neste momento trabalhamos principalmente em loja, em Vila Franca de Xira. Para situações pontuais, entre em contacto e analisamos caso a caso.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="faq-grupo" id="prazos">
+                            <h2 class="faq-grupo-titulo"><span class="ico">⏱️</span> Prazos</h2>
+                            <div class="faq-lista">
+                                <details>
+                                    <summary>Quanto tempo demora uma reparação normal?</summary>
+                                    <p>A maioria das reparações fica pronta entre 3 a 5 dias úteis após a aprovação do orçamento. Problemas de software simples podem ser resolvidos no próprio dia; reparações de hardware mais complexas podem demorar um pouco mais.</p>
+                                </details>
+                                <details>
+                                    <summary>Existe serviço urgente ou express?</summary>
+                                    <p>Sim. Oferecemos serviço urgente (1–2 dias) e express (mesmo dia, sujeito a disponibilidade). Estes serviços têm uma taxa adicional que pode estimar na nossa calculadora de orçamentos.</p>
+                                </details>
+                                <details>
+                                    <summary>Como sei quando o equipamento está pronto?</summary>
+                                    <p>Avisamos por SMS ou chamada telefónica assim que a reparação estiver concluída e o equipamento pronto a levantar.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="faq-grupo" id="garantias">
+                            <h2 class="faq-grupo-titulo"><span class="ico">🛡️</span> Garantias</h2>
+                            <div class="faq-lista">
+                                <details>
+                                    <summary>Qual é a garantia das reparações?</summary>
+                                    <p>A mão-de-obra tem garantia de 90 dias contra o mesmo defeito. As peças novas instaladas têm a garantia do fabricante, geralmente entre 90 dias e 12 meses.</p>
+                                </details>
+                                <details>
+                                    <summary>A garantia cobre quedas ou danos por água após a reparação?</summary>
+                                    <p>Não. A garantia cobre exclusivamente o defeito reparado. Danos provocados por quedas, impactos, entrada de líquidos ou mau uso após a entrega não estão incluídos.</p>
+                                </details>
+                                <details>
+                                    <summary>O que acontece se o problema voltar dentro da garantia?</summary>
+                                    <p>Se o mesmo problema se manifestar dentro do período de garantia, analisamos gratuitamente e resolvemos sem custo adicional para o cliente.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="faq-grupo" id="pagamentos">
+                            <h2 class="faq-grupo-titulo"><span class="ico">💳</span> Pagamentos</h2>
+                            <div class="faq-lista">
+                                <details>
+                                    <summary>Que formas de pagamento aceitam?</summary>
+                                    <p>Aceitamos pagamento em numerário, transferência bancária e MB Way. O pagamento é efetuado no momento de levantamento do equipamento.</p>
+                                </details>
+                                <details>
+                                    <summary>Pedem pagamento antecipado?</summary>
+                                    <p>Geralmente não. Em reparações de maior valor ou quando é necessário encomendar peças específicas, podemos pedir um sinal, mas isso é sempre acordado com o cliente antes de avançar.</p>
+                                </details>
+                                <details>
+                                    <summary>Emitem fatura ou recibo?</summary>
+                                    <p>Sim, emitimos sempre documento fiscal com o detalhe da reparação e das peças utilizadas.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="cta-faqs">
+                            <h2>Não encontrou a sua resposta?</h2>
+                            <p>Fale connosco diretamente — estamos disponíveis por telefone ou através do formulário de contacto.</p>
+                            <div class="grupo-botoes" style="justify-content:center;">
+                                <a class="btn btn-primario" href="contactos.html">Contactar-nos</a>
+                                <a class="btn btn-secundario" href="orcamento.html">Pedir orçamento</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
