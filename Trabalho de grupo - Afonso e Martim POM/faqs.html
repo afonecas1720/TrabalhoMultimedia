@@ -169,6 +169,57 @@
             </div>
         </section>
 
+        <footer class="rodape-site">
+        <div class="envoltorio grelha-rodape">
+            <div>
+                <h2>RamAiresCenter</h2>
+                <p>Assistência técnica em Vila Franca de Xira. Conteúdo fictício para fins académicos do curso de Desenvolvimento de Produtos Multimédia.</p>
+            </div>
+            <nav aria-label="Links do rodapé">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="servico-portatil.html">Detalhe: portáteis</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Recursos externos</h2>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Vila+Franca+de+Xira+Portugal" target="_blank" rel="noopener noreferrer">Mapa da cidade (Google Maps)</a></li>
+                    <li><a href="https://www.ifixit.com/Wiki" target="_blank" rel="noopener noreferrer">Wiki de reparações (iFixit)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="envoltorio rodape-base">
+            <p>&copy; 2026 RamAiresCenter. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+<script src="js/main.js"></script>
+    <script>
+        const navLinks = document.querySelectorAll(".faqs-nav a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.forEach(l => l.classList.remove("ativo"));
+                link.classList.add("ativo");
+            });
+        });
+
+        const grupos = document.querySelectorAll(".faq-grupo");
+        window.addEventListener("scroll", () => {
+            let atual = "";
+            grupos.forEach(g => {
+                if (window.scrollY >= g.offsetTop - 120) atual = g.id;
+            });
+            navLinks.forEach(l => {
+                l.classList.toggle("ativo", l.getAttribute("href") === "#" + atual);
+            });
+        });
+    </script>
+
     </main>
 
 </body>
