@@ -86,3 +86,56 @@
         }
         .faq-grupo-titulo .ico { font-size: 1.25rem; }
 
+.faq-lista details {
+            background: var(--cor-branco);
+            border: 1px solid var(--cor-borda);
+            border-radius: var(--raio);
+            margin-bottom: 0.6rem;
+            transition: box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+        .faq-lista details[open] {
+            box-shadow: var(--sombra);
+            border-color: #bfdbfe;
+        }
+        .faq-lista summary {
+            font-weight: 600;
+            font-size: 0.97rem;
+            cursor: pointer;
+            padding: 1rem 1.1rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.75rem;
+            user-select: none;
+        }
+        .faq-lista summary::-webkit-details-marker { display: none; }
+        .faq-lista summary::after {
+            content: "+";
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: var(--cor-primaria);
+            flex-shrink: 0;
+            transition: transform 0.22s ease;
+        }
+        .faq-lista details[open] summary::after { transform: rotate(45deg); }
+        .faq-lista details p {
+            margin: 0;
+            padding: 0.75rem 1.1rem 1rem;
+            color: var(--cor-texto-suave);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            border-top: 1px solid var(--cor-borda);
+        }
+
+        .cta-faqs {
+            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%);
+            color: var(--cor-branco);
+            border-radius: var(--raio);
+            padding: 2rem 1.75rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .cta-faqs h2 { margin: 0 0 0.5rem; font-size: 1.2rem; }
+        .cta-faqs p { opacity: 0.85; margin: 0 0 1.25rem; font-size: 0.97rem; }
+
