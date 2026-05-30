@@ -1,0 +1,88 @@
+.hero-faqs {
+            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 55%, #4c1d95 100%);
+            color: var(--cor-branco);
+            padding: var(--espaco-secao) 0;
+            text-align: center;
+        }
+        .hero-faqs h1 {
+            font-size: clamp(1.75rem, 4vw, 2.6rem);
+            margin: 0 0 0.75rem;
+        }
+        .hero-faqs p {
+            opacity: 0.9;
+            max-width: 52ch;
+            margin-inline: auto;
+            margin-bottom: 0;
+        }
+
+        .faqs-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: start;
+        }
+        @media (min-width: 900px) {
+            .faqs-layout { grid-template-columns: 220px 1fr; }
+        }
+
+        .faqs-nav {
+            position: sticky;
+            top: 5rem;
+        }
+        .faqs-nav h2 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--cor-texto-suave);
+            margin: 0 0 0.75rem;
+        }
+        .faqs-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        @media (min-width: 900px) {
+            .faqs-nav ul { flex-direction: column; }
+        }
+        .faqs-nav a {
+            display: block;
+            padding: 0.45rem 0.85rem;
+            border-radius: 6px;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--cor-texto-suave);
+            text-decoration: none;
+            border: 1px solid transparent;
+            transition: all 0.18s ease;
+        }
+        .faqs-nav a:hover {
+            background: var(--cor-branco);
+            border-color: var(--cor-borda);
+            color: var(--cor-primaria);
+        }
+        .faqs-nav a.ativo {
+            background: #eff6ff;
+            border-color: #bfdbfe;
+            color: var(--cor-primaria);
+        }
+
+        .faq-grupo { margin-bottom: 2.5rem; }
+        .faq-grupo:last-child { margin-bottom: 0; }
+
+        .faq-grupo-titulo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0 0 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid var(--cor-borda);
+            color: var(--cor-texto);
+        }
+        .faq-grupo-titulo .ico { font-size: 1.25rem; }
+
