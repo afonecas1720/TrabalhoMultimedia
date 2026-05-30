@@ -1,0 +1,121 @@
+/* Contactos /
+.grelha-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 880px) {
+    .grelha-contacto {
+        grid-template-columns: 1fr 1.1fr;
+    }
+
+    .grelha-contacto > .contacto-bloco-cubos-imagem {
+        justify-self: center;
+    }
+}
+
+/ Linha: cubos 2×2 à esquerda + zona da imagem (retângulo) à direita, centrada na página /
+.contacto-linha-cubos-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contacto-bloco-cubos-imagem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    max-width: 100%;
+}
+
+/ Área à direita dos cubos — mesmo “quadrado” visual da maqueta */
+.contacto-area-imagem {
+    flex: 1 1 240px;
+    max-width: min(100%, 380px);
+    min-width: 200px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: linear-gradient(160deg, #f8fafc 0%, #eff6ff 100%);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+.contacto-img-chamada {
+    width: 100%;
+    height: auto;
+    max-height: min(360px, 55vh);
+    object-fit: contain;
+    display: block;
+    transition: transform 0.25s ease;
+}
+
+.contacto-area-imagem:hover .contacto-img-chamada {
+    transform: scale(1.02);
+}
+@media (max-width: 700px) {
+    .contacto-bloco-cubos-imagem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto-area-imagem {
+        order: 1;
+        width: min(100%, 22rem);
+        min-height: 200px;
+    }
+
+    .contacto-img-chamada {
+        max-height: 240px;
+    }
+}
+
+/* Quatro painéis em grelha 2×2 — bloco centrado na página; texto alinhado à esquerda nos cubos */
+.info-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 300px));
+    justify-content: center;
+    justify-items: stretch;
+    gap: 1.35rem 1.5rem;
+    align-content: start;
+    margin-inline: auto;
+    width: fit-content;
+    max-width: 100%;
+}
+
+@media (max-width: 520px) {
+    .info-contacto {
+        grid-template-columns: minmax(0, 22rem);
+        justify-content: center;
+    }
+}
+
+.painel-info {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 1.5rem 1.35rem;
+    box-shadow: var(--sombra);
+    min-height: 11rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.painel-info h2 {
+    margin: 0 0 0.65rem;
+    font-size: 1.15rem;
+}
+
+.painel-info p {
+    margin: 0;
+    flex: 1;
+    font-size: 1.02rem;
+    line-height: 1.45;
+}
