@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reparação de portáteis na RamAiresCenter: avarias comuns, processo em quatro passos e informação sobre garantia.">
+    <title>Reparação de portáteis | RamAiresCenter</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/orcamento.css">
+</head>
+<body>
+   <header class="site-header">
+        <div class="envoltorio barra-topo">
+            <input type="checkbox" id="menu-principal" class="menu-toggle" hidden>
+            <a class="marca" href="index.html">RamAires<span>Center</span></a>
+            <label class="rotulo-menu" for="menu-principal" aria-label="Abrir ou fechar menu de navegação">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="principal-nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html" aria-current="page">Orçamentos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+            <label class="overlay-nav" for="menu-principal" aria-hidden="true"></label>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="hero-orcamento" aria-labelledby="titulo-orcamento">
+            <div class="envoltorio">
+                <h1 id="titulo-orcamento">Estimativa do Orçamentos</h1>
+                <p>Obtenha uma estimativa rápida do custo da sua reparação</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-label="Calculadora de orçamento">
+            <div class="envoltorio">
+                <div class="calculadora-wrapper">
+
+                    <div class="painel-formulario">
+                        <h2>Detalhes da Reparação</h2>
+
+                        <div class="grupo-campo">
+                            <label for="equipamento">Tipo de Equipamento</label>
+                            <select id="equipamento">
+                                <option value="">Selecione o equipamento</option>
+                                <option value="computador">Computador (Portátil/Desktop)</option>
+                                <option value="telemovel">Telemóvel</option>
+                                <option value="tablet">Tablet</option>
+                                <option value="impressora">Impressora</option>
+                                <option value="consola">Consola de Jogos</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="problema">Tipo de Problema</label>
+                            <select id="problema">
+                                <option value="">Selecione o problema</option>
+                                <option value="ecra">Ecrã Partido / Danificado</option>
+                                <option value="bateria">Problema com Bateria</option>
+                                <option value="agua">Dano por Água</option>
+                                <option value="software">Problema de Software</option>
+                                <option value="hardware">Problema de Hardware</option>
+                                <option value="limpeza">Limpeza e Manutenção</option>
+                                <option value="outro">Outro Problema</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="urgencia">Urgência</label>
+                            <select id="urgencia">
+                                <option value="normal">Normal (3–5 dias úteis)</option>
+                                <option value="urgente">Urgente (1–2 dias)</option>
+                                <option value="express">Express (Mesmo dia)</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primario btn-calcular" id="btnCalcular">Calcular Orçamento</button>
+                        <button class="btn-limpar" id="btnLimpar">Limpar</button>
+                    </div>
+
+                    <div class="painel-resultado">
+                        <h2>Estimativa de Preço</h2>
+
+                        <div class="resultado-vazio" id="resultadoVazio">
+                            <div class="ico">💰</div>
+                            <p>Preencha o formulário para calcular o orçamento</p>
+                        </div>
+
+                        <div class="resultado-preenchido" id="resultadoPreenchido">
+                            <div class="linha-resultado">
+                                <span>Equipamento</span>
+                                <span id="resEquipamento">—</span>
+                            </div>
+                            <div class="linha-resultado">
+                                <span>Problema</span>
+                                <span id="resProblema">—</span>
+                            </div>
+                            <div class="linha-resultado">
+                                <span>Urgência</span>
+                                <span id="resUrgencia">—</span>
+                            </div>
+                            <div class="linha-resultado">
+                                <span>Mão-de-obra</span>
+                                <span id="resMaoDeObra">—</span>
+                            </div>
+                            <div class="linha-resultado">
+                                <span>Taxa de urgência</span>
+                                <span id="resTaxaUrgencia">—</span>
+                            </div>
+
+                            <div class="preco-total">
+                                <p>Estimativa total</p>
+                                <div class="valor" id="resTotal">—</div>
+                                <p class="nota">* Valor estimado. O preço final é confirmado após diagnóstico gratuito.</p>
+                            </div>
+
+                            <div class="aviso-diagnostico">
+                                ℹ️ O diagnóstico é sempre gratuito e sem compromisso. O orçamento final pode variar consoante as peças necessárias.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-fundo-claro" aria-labelledby="titulo-info">
+            <div class="envoltorio">
+                <h2 class="titulo-secao" id="titulo-info">Como funciona o processo?</h2>
+                <p class="subtitulo-secao">Da entrega à recolha, em três passos simples.</p>
+                <div class="grelha-tres" style="max-width:900px;">
+                    <div class="cartao-destaque">
+                        <div style="font-size:2rem;margin-bottom:0.5rem;">📋</div>
+                        <h3>1. Diagnóstico</h3>
+                        <p>Recebemos o seu equipamento e fazemos um diagnóstico completo — sem custo e sem compromisso.</p>
+                    </div>
+                    <div class="cartao-destaque">
+                        <div style="font-size:2rem;margin-bottom:0.5rem;">✅</div>
+                        <h3>2. Aprovação</h3>
+                        <p>Enviamos o orçamento por contacto direto. Só avançamos com a reparação após a sua aprovação.</p>
+                    </div>
+                    <div class="cartao-destaque">
+                        <div style="font-size:2rem;margin-bottom:0.5rem;">🔧</div>
+                        <h3>3. Reparação</h3>
+                        <p>Os nossos técnicos procedem à reparação com peças de qualidade e no prazo acordado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape-site">
+        <div class="envoltorio grelha-rodape">
+            <div>
+                <h2>RamAiresCenter</h2>
+                <p>Assistência técnica em Vila Franca de Xira. Conteúdo fictício para fins académicos do curso de Desenvolvimento de Produtos Multimédia.</p>
+            </div>
+            <nav aria-label="Links do rodapé">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="servico-portatil.html">Detalhe: portáteis</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Recursos externos</h2>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Vila+Franca+de+Xira+Portugal" target="_blank" rel="noopener noreferrer">Mapa da cidade (Google Maps)</a></li>
+                    <li><a href="https://www.ifixit.com/Wiki" target="_blank" rel="noopener noreferrer">Wiki de reparações (iFixit)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="envoltorio rodape-base">
+            <p>&copy; 2026 RamAiresCenter. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        const precos = {
+            equipamento: {
+                computador: { label: "Computador (Portátil/Desktop)", base: 30 },
+                telemovel:  { label: "Telemóvel",                     base: 20 },
+                tablet:     { label: "Tablet",                        base: 25 },
+                impressora: { label: "Impressora",                    base: 20 },
+                consola:    { label: "Consola de Jogos",              base: 25 },
+                outro:      { label: "Outro",                         base: 15 },
+            },
+            problema: {
+                ecra:     { label: "Ecrã Partido / Danificado", custo: 60 },
+                bateria:  { label: "Problema com Bateria",      custo: 30 },
+                agua:     { label: "Dano por Água",             custo: 80 },
+                software: { label: "Problema de Software",      custo: 20 },
+                hardware: { label: "Problema de Hardware",      custo: 50 },
+                limpeza:  { label: "Limpeza e Manutenção",      custo: 15 },
+                outro:    { label: "Outro Problema",            custo: 25 },
+            },
+            urgencia: {
+                normal:  { label: "Normal (3–5 dias úteis)", taxa: 0  },
+                urgente: { label: "Urgente (1–2 dias)",      taxa: 15 },
+                express: { label: "Express (Mesmo dia)",     taxa: 30 },
+            }
+        };
+
+        document.getElementById("btnCalcular").addEventListener("click", () => {
+            const eq  = document.getElementById("equipamento").value;
+            const pr  = document.getElementById("problema").value;
+            const urg = document.getElementById("urgencia").value;
+
+            if (!eq || !pr) {
+                alert("Por favor selecione o equipamento e o tipo de problema.");
+                return;
+            }
+
+            const dadosEq  = precos.equipamento[eq];
+            const dadosPr  = precos.problema[pr];
+            const dadosUrg = precos.urgencia[urg];
+
+            const maoDeObra = dadosEq.base + dadosPr.custo;
+            const taxa      = dadosUrg.taxa;
+            const total     = maoDeObra + taxa;
+
+            document.getElementById("resEquipamento").textContent    = dadosEq.label;
+            document.getElementById("resProblema").textContent       = dadosPr.label;
+            document.getElementById("resUrgencia").textContent       = dadosUrg.label;
+            document.getElementById("resMaoDeObra").textContent      = maoDeObra + " €";
+            document.getElementById("resTaxaUrgencia").textContent   = taxa > 0 ? "+ " + taxa + " €" : "Incluída";
+            document.getElementById("resTotal").textContent          = total + " €";
+
+            document.getElementById("resultadoVazio").classList.add("escondido");
+            document.getElementById("resultadoPreenchido").classList.add("visivel");
+        });
+
+        document.getElementById("btnLimpar").addEventListener("click", () => {
+            document.getElementById("equipamento").value = "";
+            document.getElementById("problema").value    = "";
+            document.getElementById("urgencia").value    = "normal";
+            document.getElementById("resultadoVazio").classList.remove("escondido");
+            document.getElementById("resultadoPreenchido").classList.remove("visivel");
+        });
+    </script>
+</body>
+</html>
