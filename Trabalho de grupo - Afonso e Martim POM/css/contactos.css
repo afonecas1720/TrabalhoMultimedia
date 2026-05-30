@@ -119,3 +119,87 @@
     font-size: 1.02rem;
     line-height: 1.45;
 }
+
+.formulario-contacto {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--sombra);
+}
+
+.formulario-contacto label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+}
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    font: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+}
+
+/* FAQ com detalhes nativos (sem JS) /
+.faq-lista details {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    margin-bottom: 0.65rem;
+    padding: 0.5rem 1rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.faq-lista details[open] {
+    box-shadow: var(--sombra);
+}
+
+.faq-lista summary {
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.35rem 0;
+    list-style: none;
+}
+
+.faq-lista summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-lista details p {
+    margin: 0.5rem 0 0.75rem;
+    color: var(--cor-texto-suave);
+}
+
+/ Artigo detalhe */
+.artigo-servico header {
+    margin-bottom: 1.5rem;
+}
+
+.artigo-servico .capa {
+    border-radius: var(--raio);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--cor-borda);
+}
+
+.passos-reparacao ol {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.passos-reparacao li {
+    margin-bottom: 0.5rem;
+}
